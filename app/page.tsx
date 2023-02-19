@@ -1,7 +1,7 @@
-export default function Page() {
+export default function HomePage() {
     return (
         <div>
-            <h1 className="text-4xl">Welcome to the blog!</h1>
+            <h1 className="text-4xl">Welcome to the a new home decor blog!</h1>
         </div>
     );
 }
