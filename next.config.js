@@ -6,7 +6,8 @@ module.exports = {
   },
   images: {
     domains: [
-      "links.papareact.com" //whitelist url
+      "links.papareact.com",
+      "cdn.sanity.io" //whitelist url
     ]
   }
 }

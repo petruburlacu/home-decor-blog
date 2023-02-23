@@ -6,7 +6,7 @@ import PreviewBlogList from '../../components/PreviewBlogList';
 import BlogList from '../../components/BlogList';
 
 const query = groq`
-    *[_type == "post"] {
+    *[_type == 'post'] {
         ...,
         author->,
         categories[]->
@@ -30,6 +30,7 @@ export default async function HomePage() {
     } 
 
     const posts = await client.fetch(query);
+    console.log("🚀 ~ file: page.tsx:34 ~ HomePage ~ posts length:", posts.length)
     
     return (
         <BlogList posts={posts} />

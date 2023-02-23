@@ -8,6 +8,6 @@ type Props = {
 }
 
 export default function PreviewBlogList({ query }: Props) {
-    const posts = usePreview(null, query);
+    const posts = usePreview(null, query);    
     return <BlogList posts={posts} />;
 }
