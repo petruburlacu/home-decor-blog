@@ -10,5 +10,5 @@ export const client = createClient({
     projectId,
     dataset,
     apiVersion,
-    useCdn: false //can use cdn to specify local or production
+    useCdn: false // can use cdn to specify local or production, true for Vercel
 });
